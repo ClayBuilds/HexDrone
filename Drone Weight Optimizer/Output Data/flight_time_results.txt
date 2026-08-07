@@ -1,0 +1,43 @@
+============================================================
+        DRONE BATTERY FLIGHT TIME OPTIMIZER
+============================================================
+
+CALCULATION PARAMETERS:
+  Number of Motors         : 6
+  Empty Drone Weight       : 5.00 lbs
+  Dynamometer File         : dynamometer_20260307_202925.txt
+  Trendline Model          : I = 5.105 * T^1.541  (R² = 0.9963)
+  Outliers Removed         : 1 point
+  Min Thrust:Weight Ratio  : 2.0:1  (max single-motor thrust = 1.990 lbs, max total thrust = 11.942 lbs)
+  Max Burst Current        : 88.13 A total (14.69 A/motor x 6 motors)
+
+RESULTS:
+   #  Battery Name                                         Cap      Wt   Hover A     Time  Status
+  ------------------------------------------------------------------------------------------------------
+   1  MAXAMPS LiPo 4750mAh 3S 11.1v Battery Pack          4750   0.690    28.22A    10.1m  OK
+   2  MAXAMPS LiPo 5450mAh 3S 11.1v Battery Pack          5450   0.849    29.45A    11.1m  OK
+ * 3  MAXAMPS LiPo 5600mAh 3S2P 11.1v Battery Pack        5600   0.869    29.60A    11.4m  OK
+   4  MAXAMPS LiPo 6500mAh 3S2P 11.1v Battery Pack        6500   1.001    30.64A    12.7m  FAIL: Thrust:weight ratio 1.99:1 < 2.0:1 required
+   5  MAXAMPS LiPo 8000mAh Lite 3S 11.1v Battery Pack     8000   1.140    31.74A    15.1m  FAIL: Thrust:weight ratio 1.94:1 < 2.0:1 required
+   6  MAXAMPS LiPo 8000mAh 3S2P 11.1v Battery Pack        8000   1.292    32.96A    14.6m  FAIL: Thrust:weight ratio 1.90:1 < 2.0:1 required
+   7  MAXAMPS LiPo 9000mAh 3S2P 11.1v Battery Pack        9000   1.285    32.90A    16.4m  FAIL: Thrust:weight ratio 1.90:1 < 2.0:1 required
+   8  MAXAMPS LiPo 1300mAh 3S 11.1v Battery Pack          1300   0.333    25.54A     3.1m  FAIL: Max burst current 88.1A exceeds battery rating 78.0A
+   9  MAXAMPS LiPo 2000mAh 3S 11.1v Battery Pack          2000   0.399    26.03A     4.6m  FAIL: Max burst current 88.1A exceeds battery rating 54.0A
+  10  MAXAMPS LiPo 2800mAh 3S 11.1v Battery Pack          2800   0.485    26.67A     6.3m  FAIL: Max burst current 88.1A exceeds battery rating 70.0A
+  11  MAXAMPS LiPo 3250mAh 3S 11.1v Battery Pack          3250   0.551    27.17A     7.2m  FAIL: Max burst current 88.1A exceeds battery rating 74.8A
+  12  MAXAMPS Graphene LiPo 3750mAh 3S 11.1v Battery Pack    3750   0.697    28.28A     8.0m  OK
+  13  MAXAMPS LiPo 4000mAh 3S 11.1v Battery Pack          4000   0.697    28.28A     8.5m  OK
+  14  MAXAMPS LiPo 4500mAh 3S 11.1v Battery Pack          4500   0.703    28.32A     9.5m  OK
+  15  MAXAMPS Graphene LiPo 5200mAh 3S 11.1v Battery Pack    5200   0.915    29.96A    10.4m  OK
+  16  Graphene LiPo 7500mAh 3S2P 11.1v Battery Pack       7500   1.305    33.06A    13.6m  FAIL: Thrust:weight ratio 1.89:1 < 2.0:1 required
+  17  MAXAMPS LiPo 11000mAh 3S 11.1v Battery Pack        11000   1.444    34.19A    19.3m  FAIL: Thrust:weight ratio 1.85:1 < 2.0:1 required
+  18  SPEKTRUM LiPo 2200mAh 3S 30C                        2200   0.375    25.85A     5.1m  FAIL: Max burst current 88.1A exceeds battery rating 66.0A
+
+OPTIMAL BATTERY:
+  Name     : MAXAMPS LiPo 5600mAh 3S2P 11.1v Battery Pack
+  Capacity : 5600 mAh
+  Weight   : 0.869 lbs
+  Price    : $210
+  Flight   : 11.4 minutes
+  Hover    : 29.6 A total
+============================================================
